@@ -4,22 +4,22 @@ import PopularPostsElement from "./PopularPostsElement";
 const popular_posts = [
     {
         img: 'https://www.w3schools.com/w3images/workshop.jpg',
-        title: 'Lorem',
+        title: 'Популярный пост №1',
         desc: 'Sed mattis nunc'
     },
     {
         img: 'https://www.w3schools.com/w3images/gondol.jpg',
-        title: 'Ipsum',
+        title: 'Популярный пост №2',
         desc: 'Praes tinci sed'
     },
     {
         img: 'https://www.w3schools.com/w3images/skies.jpg',
-        title: 'Dorum',
+        title: 'Популярный пост №3',
         desc: 'Ultricies congue'
     },
     {
         img: 'https://www.w3schools.com/w3images/rock.jpg',
-        title: 'Mingsum',
+        title: 'Популярный пост №4',
         desc: 'Lorem ipsum dipsum'
     }
 ]
