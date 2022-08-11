@@ -3,7 +3,6 @@ import React from "react";
 const Header = () => {
     return(
         <>
-            {/* Header */}
             <header className="w3-container w3-center w3-padding-32">
                 <h1>
                     <b>MY BLOG</b>

@@ -3,7 +3,8 @@ import About from "./About";
 import PopularPosts from "./PopularPosts";
 import Tags from "./Tags";
 
-const Introduction = () => {
+
+const IntroductionMenu = () => {
     return(
         <div className="w3-col l4">
             <About/>
@@ -13,4 +14,4 @@ const Introduction = () => {
     )
 }
 
-export default Introduction;
+export default IntroductionMenu;
