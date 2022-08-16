@@ -3,6 +3,10 @@ import Header from "./components/Header";
 import BlogEntries from "./components/BlogEntries";
 import IntroductionMenu from "./components/IntroductionMenu";
 import Footer from "./components/Footer";
+import State from "./components/State";
+import Number from "./components/Number";
+import Value from "./components/Value";
+
 
 const App = () => {
     return (
@@ -15,6 +19,9 @@ const App = () => {
                 </div>
             </div>
             <Footer/>
+            <State/>
+            <Number/>
+            <Value/>
         </>
     )
 }

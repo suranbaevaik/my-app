@@ -4,14 +4,14 @@ const Post = (props) => {
     return(
         <>
             <div className="w3-card-4 w3-margin w3-white">
-        <img src={props.img} alt="Nature" style={{ width: "100%" }} />
-        <div className="w3-container">
-            <h3>
-                <b>{props.title}</b>
-            </h3>
-            <h5>
-                {props.title_desc}, <span className="w3-opacity">{props.created_date}</span>
-            </h5>
+                <img src={props.img} alt="Nature" style={{ width: "100%" }} />
+                <div className="w3-container">
+                <h3>
+                    <b>{props.title}</b>
+                </h3>
+                <h5>
+                    {props.title_desc}, <span className="w3-opacity">{props.created_date}</span>
+                </h5>
         </div>
         <div className="w3-container">
             <p>{props.desc}</p>
