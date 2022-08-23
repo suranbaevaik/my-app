@@ -1,6 +1,7 @@
 import React from "react";
 
 const PopularPostsElement = (props) => {
+
     return(
         <li className="w3-padding-16">
             <img
@@ -10,7 +11,7 @@ const PopularPostsElement = (props) => {
                 style={{ width: 50 }}
             />
             <span className="w3-large">{props.title}</span>
-            <br />
+            <br/>
             <span>{props.desc}</span>
         </li>
     )

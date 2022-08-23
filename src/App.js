@@ -7,12 +7,14 @@ import State from "./components/State";
 import Number from "./components/Number";
 import Value from "./components/Value";
 import Alert from "./components/Alert";
+import Button from "./components/Button";
+import Text from "./components/Text";
 
 
 const App = () => {
     return (
         <>
-            {/*<div className="w3-content" style={{maxWidth: "1400px"}}>
+            <div className="w3-content" style={{maxWidth: "1400px"}}>
                 <Header/>
                 <div className="w3-row">
                     <BlogEntries/>
@@ -20,10 +22,10 @@ const App = () => {
                 </div>
             </div>
             <Footer/>
-            <State/>
+            {/*<State/>
             <Number/>
             <Value/>*/}
-            <Alert
+            {/*<Alert
                 text="A simple primary alert—check it out!"
                 backgroundColor="#cfe2ff"
                 color="#0842a5"
@@ -63,6 +65,46 @@ const App = () => {
                 backgroundColor="#d3d3d4"
                 color="#323232"
             />
+            <Button
+                text="Primary"
+                backgroundColor="#0d6efd"
+                color="#ffffff"
+            />
+            <Button
+                text="Secondary"
+                backgroundColor="#6c757d"
+                color="#ffffff"
+            />
+            <Button
+                text="Success"
+                backgroundColor="#198754"
+                color="#ffffff"
+            />
+            <Button
+                text="Danger"
+                backgroundColor="#dc3545"
+                color="#ffffff"
+            />
+            <Button
+                text="Warning"
+                backgroundColor="#ffc107"
+                color="#000004"
+            />
+            <Button
+                text="Info"
+                backgroundColor="#0dcaf0"
+                color="#000004"
+            />
+            <Button
+                text="Light"
+                backgroundColor="#f8f9fa"
+                color="#000004"
+            />
+            <Button
+                title="Link"
+                backgroundColor="lightblue"
+            />
+            <Text/>*/}
         </>
     )
 }
