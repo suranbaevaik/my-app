@@ -1,22 +1,7 @@
-import React from "react";
-import tags from "./../constants/tags";
+import React from 'react';
+import tags from "../../constants/tags";
 
 const Tags = () => {
-
-    /*let content;
-
-    if (tags.length > 0){
-        content = tags.map((item, index) => {
-            return <span
-                    key={index}
-                    className="w3-tag w3-light-grey w3-small w3-margin-bottom w3-margin-right">
-                        {item}
-                    </span>
-            })
-    } else {
-        content = "no tags";
-    }*/
-
     return(
         <>
             <div className="w3-card w3-margin">
@@ -32,13 +17,13 @@ const Tags = () => {
                                     className="w3-tag w3-light-grey w3-small w3-margin-bottom w3-margin-right">
                                         {item}
                                     </span>
-                                }) : "no tags"
+                            }) : "no tags"
                         }
                     </p>
                 </div>
             </div>
         </>
     )
-}
+};
 
 export default Tags;

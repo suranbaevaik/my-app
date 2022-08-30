@@ -1,31 +1,40 @@
 import React from "react";
+import "./App.css";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Main from "./pages/main/Main";
+import About from "./pages/about/About";
+import Form from "./pages/form/Form";
+import PopularPosts from "./pages/popularPosts/PopularPosts";
+import Posts from "./pages/posts/Posts";
+import Tags from "./pages/tags/Tags";
 import Header from "./components/Header";
-import BlogEntries from "./components/BlogEntries";
-import IntroductionMenu from "./components/IntroductionMenu";
-import Footer from "./components/Footer";
-import State from "./components/State";
-import Number from "./components/Number";
-import Value from "./components/Value";
-import Alert from "./components/Alert";
-import Button from "./components/Button";
-import Text from "./components/Text";
-
+import NotFound from "./pages/notFound/NotFound";
 
 const App = () => {
     return (
-        <>
-            <div className="w3-content" style={{maxWidth: "1400px"}}>
-                <Header/>
-                <div className="w3-row">
-                    <BlogEntries/>
-                    <IntroductionMenu/>
-                </div>
-            </div>
-            <Footer/>
-            {/*<State/>
+        <BrowserRouter>
+            <Header/>
+            <Routes>
+                <Route path="/" element={<Main/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/form" element={<Form/>}/>
+                <Route path="/posts" element={<Posts/>}/>
+                <Route path="/popular_posts" element={<PopularPosts/>}/>
+                <Route path="/tags" element={<Tags/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
+        </BrowserRouter>
+    )
+}
+
+export default App;
+
+
+/**/
+{/*<State/>
             <Number/>
             <Value/>*/}
-            {/*<Alert
+{/*<Alert
                 text="A simple primary alert—check it out!"
                 backgroundColor="#cfe2ff"
                 color="#0842a5"
@@ -105,8 +114,6 @@ const App = () => {
                 backgroundColor="lightblue"
             />
             <Text/>*/}
-        </>
-    )
-}
-
-export default App;
+{/*<RegisterForm/>*/}
+/*
+<Form/>*/

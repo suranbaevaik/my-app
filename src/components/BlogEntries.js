@@ -2,8 +2,6 @@ import React from "react";
 import Post from "./Post";
 import posts from "./../constants/posts";
 
-
-
 const BlogEntries = () => {
     const elements = posts.map((item, index) => {
         return <Post
@@ -17,12 +15,9 @@ const BlogEntries = () => {
         />
     })
 
-
     return(
         <div className="w3-col l8 s12">
             {elements}
-            {/*<Post/>*/}
-            {/*<Post title="Этот тайтл передается из родителя"/>*/}
         </div>
     )
 }
@@ -30,4 +25,18 @@ const BlogEntries = () => {
 export default BlogEntries;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+{/*<Post/>*/}
+{/*<Post title="Этот тайтл передается из родителя"/>*/}
 /*пропсы нельзя менять (приравнивать к новому значению)*/

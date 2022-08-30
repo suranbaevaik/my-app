@@ -1,6 +1,6 @@
 import React from "react";
 import About from "./About";
-import PopularPosts from "./PopularPosts";
+import PopularPosts from "./popularPosts/PopularPosts";
 import Tags from "./Tags";
 
 
