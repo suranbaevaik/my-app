@@ -9,6 +9,11 @@ import Posts from "./pages/posts/Posts";
 import Tags from "./pages/tags/Tags";
 import Header from "./components/Header";
 import NotFound from "./pages/notFound/NotFound";
+import Catalog from "./pages/catalog/Catalog";
+import Iphone from "./pages/Iphone/Iphone";
+import Ipad from "./pages/Ipad/Ipad";
+import Watch from "./pages/Watch/Watch";
+import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
 
 const App = () => {
     return (
@@ -21,6 +26,12 @@ const App = () => {
                 <Route path="/posts" element={<Posts/>}/>
                 <Route path="/popular_posts" element={<PopularPosts/>}/>
                 <Route path="/tags" element={<Tags/>}/>
+                <Route path="/catalog" element={<Catalog/>}>
+                    <Route path="iphone" element={<Iphone/>}/>
+                    <Route path="ipad" element={<Ipad/>}/>
+                    <Route path="watch" element={<Watch/>}/>
+                </Route>
+                <Route path="shopping_cart" element={<ShoppingCart/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
@@ -28,6 +39,17 @@ const App = () => {
 }
 
 export default App;
+
+
+/*localhost:3000/ - base_url, domen
+localhost:3000/catalog - Header, Catalog
+localhost:3000/ - Header, Main
+localhost:3000/about - Header, About
+localhost:3000/main - Header, NotFound*/
+
+/*localhost:3000/catalog/iphone - Catalog, Iphone
+localhost:3000/catalog/ipad - Catalog, Ipad
+localhost:3000/catalog/watch - Catalog, Watch*/
 
 
 /**/
