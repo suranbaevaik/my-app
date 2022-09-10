@@ -1,11 +1,16 @@
 import React from 'react';
-import iphone from "../../constants/iphone";
-import IphoneElement from "./IphoneElement";
-import style from './Iphone.module.css';
+import iphone from '../../constants/iphone';
+import ipad from "../../constants/ipad";
+import watch from "../../constants/watch";
+import ProductElement from './ProductElement';
+import style from './Products.module.css';
+import {useParams} from 'react-router-dom';
 
-const Iphone = () => {
+const Products = () => {
+    const params = useParams();
+
     const element = iphone.map((item, index ) => {
-        return <IphoneElement
+        return <ProductElement
             key={index}
             img={item.img}
             name={item.name}
@@ -22,9 +27,8 @@ const Iphone = () => {
             <div className={style.product_list}>
                 {element}
             </div>
-
         </div>
     );
 };
 
-export default Iphone;
+export default Products;

@@ -1,37 +1,18 @@
 import React from "react";
 import "./App.css";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Main from "./pages/main/Main";
-import About from "./pages/about/About";
-import Form from "./pages/form/Form";
-import PopularPosts from "./pages/popularPosts/PopularPosts";
-import Posts from "./pages/posts/Posts";
-import Tags from "./pages/tags/Tags";
 import Header from "./components/Header";
 import NotFound from "./pages/notFound/NotFound";
 import Catalog from "./pages/catalog/Catalog";
-import Iphone from "./pages/Iphone/Iphone";
-import Ipad from "./pages/Ipad/Ipad";
-import Watch from "./pages/Watch/Watch";
-import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
+import Products from "./pages/products/Products";
 
 const App = () => {
     return (
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path="/" element={<Main/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/form" element={<Form/>}/>
-                <Route path="/posts" element={<Posts/>}/>
-                <Route path="/popular_posts" element={<PopularPosts/>}/>
-                <Route path="/tags" element={<Tags/>}/>
-                <Route path="/catalog" element={<Catalog/>}>
-                    <Route path="iphone" element={<Iphone/>}/>
-                    <Route path="ipad" element={<Ipad/>}/>
-                    <Route path="watch" element={<Watch/>}/>
-                </Route>
-                <Route path="shopping_cart" element={<ShoppingCart/>}/>
+                <Route path="/catalog" element={<Catalog/>}/>
+                <Route path="catalog/:catalog_name" element={<Products/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
@@ -47,9 +28,9 @@ localhost:3000/ - Header, Main
 localhost:3000/about - Header, About
 localhost:3000/main - Header, NotFound*/
 
-/*localhost:3000/catalog/iphone - Catalog, Iphone
+/*localhost:3000/catalog/iphone - Catalog, products
 localhost:3000/catalog/ipad - Catalog, Ipad
-localhost:3000/catalog/watch - Catalog, Watch*/
+localhost:3000/catalog/ipad - Catalog, Watch*/
 
 
 /**/

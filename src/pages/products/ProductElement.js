@@ -1,10 +1,10 @@
 import React from 'react';
-import style from "./Iphone.module.css";
+import style from './Products.module.css';
 
-const IphoneElement = (props) => {
-    const getProductName = (el) => {
-        let data ={};
-        data["product_name"] = el.name;
+const ProductElement = (props) => {
+    const getProductName = () => {
+        let data = {};
+        data["product_name"] = props.name;
         console.log(data);
     }
 
@@ -14,9 +14,9 @@ const IphoneElement = (props) => {
             <h3>{props.name}</h3>
             <span>{props.price_som}</span>
             <span>{props.price_dollar}</span>
-            <button onClick={() => getProductName(props)}>Добавить в корзину</button>
+            <button onClick={getProductName}>Добавить в корзину</button>
         </div>
     );
 };
 
-export default IphoneElement;
+export default ProductElement;

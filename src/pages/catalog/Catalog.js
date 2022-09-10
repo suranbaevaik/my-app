@@ -29,7 +29,7 @@ const Catalog = () => {
                     <img src={iwatch} alt=""/>
                     <div className={s.card_desc}>
                         <p>Watch</p>
-                        <Link to="/catalog/watch">перейти ></Link>
+                        <Link to="/catalog/ipad">перейти ></Link>
                     </div>
                 </div>
             </div>

@@ -10,30 +10,7 @@ const Header = () => {
           <nav>
               <ul>
                   <li>
-                      <NavLink to="/" className={setActive}>Главная</NavLink>
-                  </li>
-                  <li>
-                      <NavLink to="/about" className={setActive}>О нас</NavLink>
-                  </li>
-                  <li>
-                      <NavLink to="/form" className={setActive}>Обратная связь</NavLink>
-                  </li>
-                  <li>
-                      <NavLink to="/posts" className={setActive}>Все посты</NavLink>
-                  </li>
-                  <li>
-                      <NavLink to="/popular_posts" className={setActive}>Популярные посты</NavLink>
-                  </li>
-                  <li>
-                      <NavLink to="/tags" className={setActive}>Все теги</NavLink>
-                  </li>
-                  <li>
                       <NavLink to="/catalog" className={setActive}>Каталог</NavLink>
-                  </li>
-                  <li>
-                      <NavLink to="/shopping_cart">
-                          <img src={cart} style={{width: "30px"}} alt=""/>
-                      </NavLink>
                   </li>
               </ul>
           </nav>
