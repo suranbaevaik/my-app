@@ -3,16 +3,22 @@ import "./App.css";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import NotFound from "./pages/notFound/NotFound";
+import Form from "./pages/form/Form";
 import Catalog from "./pages/catalog/Catalog";
 import Products from "./pages/products/Products";
+import About from "./pages/about/About";
+import FetchTest from "./pages/fetchTest/FetchTest";
 
 const App = () => {
     return (
         <BrowserRouter>
             <Header/>
             <Routes>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/form" element={<Form/>}/>
                 <Route path="/catalog" element={<Catalog/>}/>
                 <Route path="catalog/:catalog_name" element={<Products/>}/>
+                <Route path="/fetchTest" element={<FetchTest/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>

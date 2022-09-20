@@ -8,7 +8,7 @@ const watch = [
     },
     {
         id: 2,
-        img: 'https://www.istore.kg/media/products/iPad-Pro-11-WiFi-Space-Gray.webp',
+        img: 'https://www.istore.kg/media/products/7-41-Nike-Starlight-GPS.webp',
         name: 'Watch Series 7 Nike with Aluminum Case',
         price_som: 'от 36 120 сом',
         price_dollar: 'от $430,0'

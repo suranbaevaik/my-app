@@ -1,6 +1,5 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import cart from '../assets/icons/shopping-cart.png';
 
 const Header = () => {
     const setActive = ({isActive}) => isActive ? 'active' : '';
@@ -9,6 +8,12 @@ const Header = () => {
      <header className="w3-container w3-center w3-padding-32 menu">
           <nav>
               <ul>
+                  <li>
+                      <NavLink to="/about" className={setActive}>О нас</NavLink>
+                  </li>
+                  <li>
+                      <NavLink to="/form" className={setActive}>Обратная связь</NavLink>
+                  </li>
                   <li>
                       <NavLink to="/catalog" className={setActive}>Каталог</NavLink>
                   </li>

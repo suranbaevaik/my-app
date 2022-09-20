@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.btn{
+    padding: 15px 25px;
+    border: 0;
+    background-color: #0071e3;
+    color: #FFFFFF;
+    margin: 30px;
+}
