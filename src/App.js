@@ -8,6 +8,7 @@ import Catalog from "./pages/catalog/Catalog";
 import Products from "./pages/products/Products";
 import About from "./pages/about/About";
 import FetchTest from "./pages/fetchTest/FetchTest";
+import AddProducts from "./pages/addProducts/AddProducts";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="/catalog" element={<Catalog/>}/>
                 <Route path="catalog/:catalog_name" element={<Products/>}/>
                 <Route path="/fetchTest" element={<FetchTest/>}/>
+                <Route path="/addProducts" element={<AddProducts/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>

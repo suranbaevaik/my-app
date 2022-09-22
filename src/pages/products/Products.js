@@ -18,41 +18,25 @@ const Products = () => {
         getProducts(params.catalog_name)
     }, [])
 
+    const elements = products.map((item, index) => {
+        return <ProductElement
+            key={index}
+            img={item.img}
+            name={item.name}
+            price_som={item.price_som}
+            price_dollar={item.price_dollar}
+        />
+    })
+
     let title;
-    let elements;
     if (params.catalog_name === 'iphone'){
         title= 'Iphone';
-        elements = products.map((iphone) => {
-            return <ProductElement
-                key={iphone.id}
-                img={iphone.img}
-                name={iphone.name}
-                price_som={iphone.price_som}
-                price_dollar={iphone.price_dollar}
-            />
-        })
+
     } else if (params.catalog_name === 'ipad'){
         title = 'Ipad';
-        elements = products.map((ipad) => {
-            return <ProductElement
-                key={ipad.id}
-                img={ipad.img}
-                name={ipad.name}
-                price_som={ipad.price_som}
-                price_dollar={ipad.price_dollar}
-            />
-        })
+
     } else if (params.catalog_name === 'watch'){
         title = 'Watch';
-        elements = products.map((watch) => {
-            return <ProductElement
-                key={watch.id}
-                img={watch.img}
-                name={watch.name}
-                price_som={watch.price_som}
-                price_dollar={watch.price_dollar}
-            />
-        })
     }
 
     return (

@@ -3,8 +3,8 @@ const api = {
     getPosts: 'https://jsonplaceholder.typicode.com/posts',
     getProducts: 'http://localhost:3001/products',
     iphone: 'http://localhost:3001/iphone',
-    ipad: 'http://localhost:3002/ipad',
-    watch: 'http://localhost:3003/watch'
+    ipad: 'http://localhost:3001/ipad',
+    watch: 'http://localhost:3001/watch'
 }
 
 export default api;
