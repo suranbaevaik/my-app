@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Catalog.module.css';
-import iphone from '../../assets/images/iphones.webp';
-import ipad from '../../assets/images/ipads.webp';
-import watch from '../../assets/images/watches.webp';
+import iphone from '../../../assets/images/iphones.webp';
+import ipad from '../../../assets/images/ipads.webp';
+import watch from '../../../assets/images/watches.webp';
 import {Outlet} from 'react-router-dom';
 import {Link} from "react-router-dom";
 

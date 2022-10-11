@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import ProductElement from './ProductElement';
 import {useParams} from 'react-router-dom';
-import api from '../../constants/api';
+import api from '../../../constants/api';
 import style from './Products.module.css';
 
 const Products = () => {
@@ -25,6 +25,7 @@ const Products = () => {
             name={item.name}
             price_som={item.price_som}
             price_dollar={item.price_dollar}
+            id={item.id}
         />
     })
 
